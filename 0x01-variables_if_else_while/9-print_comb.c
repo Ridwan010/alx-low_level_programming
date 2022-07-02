@@ -1,34 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - prints Buzz each numbers of 3 and 5
- * Return: Always 0
+ * main - Prints all possible combinations of single-digit numbers.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-	int n;
-	
-	n = 1;
-	printf("%d", n);
-	for (n = 2; n <= 100; n++)
+	int num;
+
+	for (num = 0; num <= 9; num++)
 	{
-		if ((n % 3 == 0) && (n % 5 == 0))
-		{
-			printf(" FizzBuzz");
-		}
-		else if (n % 3 == 0)
-		{
-			printf(" Fizz");
-		}
-		else if (n % 5 == 0)
-		{
-			printf(" Buzz");
-		}
-		else
-		{
-			printf(" %d", n);
-		}
+		putchar((num % 10) + '0');
+		if (num == 9)
+			continue;
+		
+		putchar(',');
+		putchar(' ');
 	}
-	printf("\n");
+
+	putchar('\n');
+
 	return (0);
 }
