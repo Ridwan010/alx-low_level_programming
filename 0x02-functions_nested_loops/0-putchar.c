@@ -1,8 +1,8 @@
 #include "main.h"
 
-/* A program that prints _putchar followed by a new line */
+/* main - A program that prints _putchar followed by a new line */
 
-int main()
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
