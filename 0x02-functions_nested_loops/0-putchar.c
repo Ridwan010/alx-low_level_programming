@@ -2,7 +2,7 @@
 
 /* A program that prints _putchar followed by a new line */
 
-int main(void)
+int main()
 {
 	_putchar('_');
 	_putchar('p');
